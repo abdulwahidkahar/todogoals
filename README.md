@@ -4,13 +4,14 @@
 
 Todogoals adalah aplikasi pencatatan tugas sederhana untuk membantu mengatur kegiatan sehari-hari. Dibangun dengan Laravel 13, React, TypeScript, Inertia, Tailwind CSS, dan MySQL dari XAMPP.
 
-Aplikasi dapat langsung digunakan tanpa login. Tugas pengunjung tersimpan di browser (`localStorage`), sedangkan tugas pengguna yang sudah login tersimpan di database. Kedua daftar tersebut terpisah dan tidak digabungkan otomatis.
+Aplikasi dapat langsung digunakan tanpa login. Tugas pengunjung tersimpan di browser (`localStorage`), sedangkan tugas pengguna yang sudah login tersimpan di database. Setelah login atau daftar, tugas tamu otomatis ditambahkan ke akun, termasuk tenggat dan status selesainya. Data tamu di browser dibersihkan setelah berhasil tersimpan; jika gagal, data tetap tersedia untuk dicoba kembali.
 
 ## Fitur
 
 - Registrasi, login, logout, dan reset kata sandi.
 - Tambah, ubah, dan hapus tugas.
 - Tandai tugas selesai melalui checkbox.
+- Pemindahan otomatis tugas tamu ke akun setelah login atau daftar.
 - Tambahkan tenggat opsional saat mengubah tugas.
 - Filter semua, belum selesai, dan selesai melalui menu **⋯**.
 - Pilih beberapa tugas untuk dihapus sekaligus dengan konfirmasi.
